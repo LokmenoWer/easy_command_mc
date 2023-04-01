@@ -2,9 +2,13 @@
 name = "easy_command_mc"
 version = "0.1.0"
 edition = "2021"
-
+authors = ["LokmenoWer","HyacinthHaru"]
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
 serde = "1.0.153"
 serde_json = "1.0.94"
+clap = "4.2.1"
+clap_derive = "4.2.0"
+clap_builder = "4.2.1"
+once_cell = "1.17.1"
