@@ -36,14 +36,13 @@ pub fn print_short(){
 
 //使用一个方法解析用户输入
 pub fn get_input(){
-    
-    loop {
+    loop { 
         //在用户输入前添加一个提示符
         print!("> ");
         //使用flush()方法清空缓冲区
         io::stdout().flush()
             .expect("Failed to flush stdout");
-        
+
         //定义一个可变的字符串变量，用于存储用户输入
         let mut input = String::new();
         //使用read()方法读取用户输入
@@ -65,6 +64,7 @@ fn parser_command(input: &str){
         "exit" => output_exit(),
         "clear" => output_clear(),
         "server-edit" => edit_server_config(),
+        ""=> return,
         _ => println!("error"),
     }
 }
